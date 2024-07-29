@@ -1,4 +1,4 @@
-from src.mlproject1 import logging
+from src.ml import logging
 
 
 if __name__=="__main__":
