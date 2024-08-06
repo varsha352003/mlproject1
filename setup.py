@@ -16,19 +16,13 @@ def get_requirements(file_path:str)->List[str]:
             requirements.remove(HYPEN_E_DOT)'''
     return requirements
 
-
-
-
-
-
-
-
 setup(
-name='mlproject1',
+name='mlproject',
 version='0.0.1',
 author='Varsha',
 author_email='varsha352003@gmail.com',
-packages=find_packages(),
+packages=find_packages(where='src'),
+package_dir={'':'src'},
 install_requires=get_requirements('requirements.txt') ##creating a fun to get all our installations
 
 
